@@ -1,0 +1,21 @@
+.form {
+  max-width: 360px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #13973f;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 200px;
+  margin-top: 2px;
+}
+
+.button {
+  cursor: pointer;
+}

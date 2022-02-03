@@ -1,0 +1,15 @@
+.item {
+  display: flex;
+  justify-content: start;
+  font-size: 12px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.button {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 10px;
+}

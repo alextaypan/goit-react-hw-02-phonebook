@@ -33,15 +33,13 @@ class App extends Component {
   getContacts = () => {
     const { filter, contacts } = this.state;
     return contacts.filter((contact) =>
-      contact.name.toLowerCase().includes(filter.toLowerCase())
+      contact.name.toLowerCase().includes(filter)
     );
   };
 
-  deleteContact = (contactId) => {
+  deleteContact = (id) => {
     this.setState((prevState) => ({
-      contacts: prevState.contacts.filter(
-        (contact) => contact.id !== contactId
-      ),
+      contacts: prevState.contacts.filter((contact) => contact.id !== id),
     }));
   };
 
